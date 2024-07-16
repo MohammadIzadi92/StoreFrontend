@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>سایت من</title>
+</head>
+
+<body onresize="giveWidth()">
+
+    <!-- Header -->
+    <div class="pt-2 pt-sm-3">
+        <section class="container">
+            <div class="custom-border-light shadow-sm rounded-2 py-5 p-sm-5 d-flex justify-content-center align-items-center flex-column">
+                <h2 class="mb-5 text-danger ">سایت من</h2>
+                <div class="position-relative d-flex flex-wrap flex-row justify-content-around justify-content-sm-between align-items-center col-12 col-md-10 col-lg-8 col-xl-6">
+                    <span class="mt-1 position-absolute start-0 bg-danger d-none d-sm-block w-50" style="height: 1px; z-index: -1;"></span>
+                    <span class="mt-1 position-absolute start-50 bg-opacity-50 bg-dark d-none d-sm-block w-50" style="height: 1px; z-index: -1;"></span>
+                    <a class="d-flex align-items-center justify-content-center flex-wrap text-danger bg-white py-2 px-2 px-sm-3
+                    " href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                            class="bi bi-cart2 me-2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                        <span class="d-inline-block">سبد خرید</span>
+                    </a>
+                    <a class="d-flex align-items-center justify-content-center flex-wrap text-danger fs-5 bg-white py-2 px-2 px-sm-3
+                    " href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                            class="bi bi-truck me-2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                        </svg>
+                        <span class="d-inline-block">زمان و نحوه ارسال</span>
+                    </a>
+                    <a class="d-flex align-items-center justify-content-center flex-wrap text-dark text-opacity-50 bg-white py-2 px-2 px-sm-3
+                    " href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-wallet2 me-2" viewBox="0 0 16 16">
+                            <path
+                                d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
+                        </svg>
+                        <span class="d-inline-block">پرداخت</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Content -->
+    <div class="py-2 py-sm-3">
+        <section class="container">
+            <!-- Content -->
+            <div class="row g-3">
+                <!-- Content -->
+                <div class="col-sm-12 col-md-8 col-lg-9 position-relative">
+                    <!-- Address -->
+                    <div class="custom-border-light shadow-sm mb-3 rounded-2 p-3 d-flex flex-wrap justify-content-center">
+                        <div class="d-flex align-items-center justify-content-center me-3 my-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-geo" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                            </svg>
+                        </div>
+                        <div class="d-flex flex-column me-3">
+                            <span class="small text-muted py-1">آدرس تحویل سفارش</span>
+                            <span class="py-1">اصفهان - نجف آباد - خیابان دانش - پلاک 149</span>
+                            <span class="small text-muted py-1">اصغر براتی</span>
+                        </div>
+                        <div class="ms-sm-auto d-flex align-items-center my-2">
+                            <a type="button" data-bs-toggle="modal" data-bs-target="#addressModal" class="small text-danger mb-1" href="#">ویرایش آدرس</a>
+                        </div>
+  
+                        <!-- Address Modal -->
+                        <div class="modal fade" id="addressModal" tabindex="-1" aria-labelledby="addressModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h6 class="modal-title small-h6 text-muted" id="addressModalLabel">انتخاب آدرس</h6>
+                                        <button type="button" class="btn-close btn-sm small" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body py-0 d-flex flex-column">
+                                        <div class="rounded-2 bg-light p-3">
+                                            <a type="button" data-bs-toggle="modal" data-bs-target="#addAddressModal" class="text-muted d-flex align-items-center btn-hover-text-danger">
+                                                <span>افزودن آدرس جدید</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi ms-auto bi-chevron-left" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="mt-3 overflow-auto" style="max-height: 452px;">
+                                            <div class="form-check border-top pt-3 d-flex gap-3">
+                                                <input class="form-check-input mt-2" type="radio" name="address" id="address1">
+                                                <label class="form-check-label d-flex flex-column" for="address1">
+                                                    <h6 class="mb-3 small-h6 fw-lighter lh-base d-flex align-items-center">شهرک غرب، م. صنعت، ابتدای بل فرحزادی، خ. حسن سیف، بن بستم. چهارم</h6>
+                                                    <span class="mb-3 d-flex align-items-center gap-2 text-muted">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upc" viewBox="0 0 16 16">
+                                                            <path d="M3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
+                                                        </svg>
+                                                        1367598125
+                                                    </span>
+                                                    <span class="mb-3 d-flex align-items-center gap-2 text-muted">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                                        </svg>
+                                                        محمد ایزدی
+                                                    </span>
+                                                    <span class="mb-3 d-flex align-items-center gap-2 text-muted">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" fill="currentColor" class="bi bi-phone" viewBox="0 2 16 16">
+                                                            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                                        </svg>
+                                                        09904751095
+                                                    </span>
+                                                    <div class="d-flex gap-2 align-items-center mb-3">
+                                                        <a href="#" class="text-danger">ویرایش</a>
+                                                        <span class="text-gray">|</span>
+                                                        <a href="#" class="text-danger">حذف</a>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="form-check border-top pt-3 d-flex gap-3">
+                                                <input class="form-check-input mt-2" type="radio" name="address" id="address2">
+                                                <label class="form-check-label d-flex flex-column" for="address2">
+                                                    <h6 class="mb-3 small-h6 fw-lighter lh-base d-flex align-items-center">شهرک غرب، م. صنعت، ابتدای بل فرحزادی، خ. حسن سیف، بن بستم. چهارم</h6>
+                                                    <span class="mb-3 d-flex align-items-center gap-2 text-muted">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upc" viewBox="0 0 16 16">
+                                                            <path d="M3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z"/>
+                                                        </svg>
+                                                        1367598125
+                                                    </span>
+                                                    <span class="mb-3 d-flex align-items-center gap-2 text-muted">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                                                        </svg>
+                                                        محمد ایزدی
+                                                    </span>
+                                                    <span class="mb-3 d-flex align-items-center gap-2 text-muted">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="21" fill="currentColor" class="bi bi-phone" viewBox="0 2 16 16">
+                                                            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                                                        </svg>
+                                                        09904751095
+                                                    </span>
+                                                    <div class="d-flex gap-2 align-items-center mb-3">
+                                                        <a href="#" class="text-danger">ویرایش</a>
+                                                        <span class="text-gray">|</span>
+                                                        <a href="#" class="text-danger">حذف</a>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Address Modal -->
+                        <div class="modal fade" id="addAddressModal" tabindex="-1" aria-labelledby="addAddressModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header border-0">
+                                        <h6 class="modal-title small-h6 text-muted" id="addAddressModalLabel">افزودن آدرس جدید</h6>
+                                        <button type="button" class="btn-close btn-sm small" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex flex-column gap-3">
+                                        <span class="small">آدرس</span>
+                                        <div class="form-floating">
+                                            <textarea class="form-control form-focus-input" placeholder="Leave a comment here" id="floatingAddress" style="height: 100px"></textarea>
+                                            <label class="text-muted small" for="floatingAddress">نشانی پستی</label>
+                                        </div>
+                                        <span class="small">انتخاب آدرس</span>
+                                        <div class="d-flex flex-column gap-3">
+                                            <div class="d-flex gap-3">
+                                                <div class="flex-grow-1 form-floating">
+                                                    <select class="form-select form-focus-input custom-select-class" id="floatingOstan" aria-label="Floating label select example">
+                                                        <option selected>انتخاب کنید</option>
+                                                        <option value="1">تهران</option>
+                                                        <option value="2">اصفهان</option>
+                                                        <option value="3">یزد</option>
+                                                    </select>
+                                                    <label class="text-muted small" for="floatingOstan">استان</label>
+                                                </div>
+                                                <div class="flex-grow-1 form-floating">
+                                                    <select class="form-select form-focus-input custom-select-class" id="floatingShahr" aria-label="Floating label select example">
+                                                        <option selected>انتخاب کنید</option>
+                                                        <option value="1">تهران</option>
+                                                        <option value="2">اصفهان</option>
+                                                        <option value="3">یزد</option>
+                                                    </select>
+                                                    <label class="text-muted small" for="floatingShahr">شهر</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <div class="col form-floating">
+                                                    <select class="form-select form-focus-input custom-select-class" id="floatingMahale" aria-label="Floating label select example">
+                                                        <option class="" selected>انتخاب کنید</option>
+                                                        <option class="" value="1"><small>تهران</small></option>
+                                                        <option class="" value="2">اصفهان</option>
+                                                        <option class="" value="3">یزد</option>
+                                                    </select>
+                                                    <label class="text-muted small" for="floatingMahale">محله</label>
+                                                </div>
+                                                <div class="col form-floating">
+                                                    <input type="text" class="form-control form-focus-input" id="floatingCodePosti" placeholder="name@example.com">
+                                                    <label class="text-muted small" for="floatingCodePosti">کد پستی</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex gap-3">
+                                                <div class="flex-grow-1 form-floating">
+                                                    <input type="text" class="form-control form-focus-input" id="floatingVahed" placeholder="name@example.com">
+                                                    <label class="text-muted small" for="floatingVahed">واحد</label>
+                                                </div>
+                                                <div class="flex-grow-1 form-floating">
+                                                    <input type="text" class="form-control form-focus-input" id="floatingPelak" placeholder="name@example.com">
+                                                    <label class="text-muted small" for="floatingPelak">پلاک</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span class="small">گیرنده</span>
+                                        <div class="d-flex gap-3">
+                                            <div class="flex-grow-1 form-floating">
+                                                <input type="text" class="form-control form-focus-input" id="floatingVahed" placeholder="name@example.com">
+                                                <label class="text-muted small" for="floatingVahed">نلم و نام خانوادگی</label>
+                                            </div>
+                                            <div class="flex-grow-1 form-floating">
+                                                <input type="text" class="form-control form-focus-input" id="floatingPelak" placeholder="name@example.com">
+                                                <label class="text-muted small" for="floatingPelak">موبایل</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- How - When Send -->
+                    <div class="rounded-2 mb-3 d-flex flex-column">
+                        <!-- Products -->                        
+                        <span class="mb-3">محصولات</span>
+                        <div class="grid-box rounded-2">
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Send Way -->
+                    <div class="mb-3 shadow-sm p-3 custom-border-light rounded-2">
+                        <span class="d-block pb-3">روش ارسال</span>
+                        <div class="d-flex gap-3 flex-wrap bg-light p-2 p-sm-3 rounded-2">
+                            <div class="d-flex align-items-center gap-2 form-check form-check-inline text-muted small mb-0">
+                                <input class="form-check-input" type="radio" name="sendWay" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">ارسال عادی</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 form-check form-check-inline text-muted small mb-0">
+                                <input class="form-check-input" type="radio" name="sendWay" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">ارسال پیشتاز</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Send Time -->
+                    <div class="p-3 shadow-sm custom-border-light rounded-2">
+                        <span class="d-block pb-3">زمان ارسال</span>
+                        <div class="d-flex gap-3 flex-wrap bg-light p-2 p-sm-3 rounded-2">
+                            <div class="d-flex align-items-center gap-2 form-check form-check-inline text-muted small mb-0">
+                                <input class="form-check-input" type="radio" name="sendTime" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">شنبه</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 form-check form-check-inline text-muted small mb-0">
+                                <input class="form-check-input" type="radio" name="sendTime" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">یک شنبه</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 form-check form-check-inline text-muted small mb-0">
+                                <input class="form-check-input" type="radio" name="sendTime" id="inlineRadio1"
+                                    value="option3">
+                                <label class="form-check-label" for="inlineRadio1">دو شنبه</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 form-check form-check-inline text-muted small mb-0">
+                                <input class="form-check-input" type="radio" name="sendTime" id="inlineRadio2"
+                                    value="option4">
+                                <label class="form-check-label" for="inlineRadio2">سه شنبه</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 form-check form-check-inline text-muted small mb-0">
+                                <input class="form-check-input" type="radio" name="sendTime" id="inlineRadio1"
+                                    value="option5">
+                                <label class="form-check-label" for="inlineRadio1">چهار شنبه</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 form-check form-check-inline text-muted small mb-0">
+                                <input class="form-check-input" type="radio" name="sendTime" id="inlineRadio2"
+                                    value="option6">
+                                <label class="form-check-label" for="inlineRadio2">پنج شنبه</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 form-check form-check-inline text-muted small mb-0">
+                                <input class="form-check-input" type="radio" name="sendTime" id="inlineRadio1"
+                                    value="option7">
+                                <label class="form-check-label" for="inlineRadio1">جمعه</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SideBar -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="sticky-top z-1 shadow-sm custom-border-light rounded-2" style="top: 16px;">
+                        <div class="card-body p-3 p-md-2 p-xl-3">
+                            <div class="d-flex flex-wrap gap-2 p-1">
+                                <span class="small">خلاصه سفارش</span>
+                                <span class="ms-auto small">۶ کالا</span>
+                            </div>
+                            <div class="bg-light rounded-2 px-3 py-1 mt-2">
+                                <div class="d-flex flex-wrap gap-2 align-items-center py-2">
+                                    <h6 class="small fw-lighter m-0">مبلغ کالاها</h6>
+                                    <span class="ms-auto small fw-lighter">۵۶۸.۰۰۰ <span
+                                            class="cart-font-size">تومان</span></span>
+                                </div>
+
+                                <div class="d-flex flex-wrap gap-2 align-items-center py-2">
+                                    <h6 class="small fw-lighter m-0 text-danger">سود شما از خرید</h6>
+                                    <span class="ms-auto small fw-lighter text-danger">۶۸.۰۰۰ <span
+                                            class="cart-font-size">تومان</span></span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 align-items-center py-2">
+                                    <h6 class="small fw-lighter m-0">جمع سبد خرید</h6>
+                                    <span class="ms-auto small fw-lighter">۵۰۰.۰۰۰ <span
+                                            class="cart-font-size">تومان</span></span>
+                                </div>
+                            </div>
+                            <div class="rounded-2 px-3 py-1 mt-1">
+                                <div class="d-flex flex-wrap gap-2 align-items-center py-2">
+                                    <h6 class="small fw-lighter m-0">هزینه ی ارسال</h6>
+                                    <span class="ms-auto small fw-lighter">رایگان <span
+                                        class="cart-font-size"></span></span>
+                                </div>
+                            </div>
+                            <div class="bg-light rounded-2 px-3 py-1 mt-1">
+                                <div class="d-flex flex-wrap gap-2 align-items-center py-2">
+                                    <h6 class="small fw-lighter m-0">مبلغ قابل پرداخت</h6>
+                                    <span class="ms-auto small fw-lighter">۵۰۰.۰۰۰ <span
+                                            class="cart-font-size">تومان</span></span>
+                                </div>
+                            </div>
+                            <a href="multi_step_purchase_pay.html" class="btn border-danger small rounded-1 text-danger btn-hover-danger d-block mt-3">ادامه</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="assets/js/swiper.js"></script>
+
+    <!-- My Script -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

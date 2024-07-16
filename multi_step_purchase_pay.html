@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>سایت من</title>
+</head>
+
+<body onresize="giveWidth()">
+
+    <!-- Header -->
+    <div class="pt-2 pt-sm-3">
+        <section class="container">
+            <div class="custom-border-light shadow-sm rounded-2 py-5 p-sm-5 d-flex justify-content-center align-items-center flex-column">
+                <h2 class="mb-5 text-danger ">سایت من</h2>
+                <div class="position-relative d-flex flex-wrap flex-row justify-content-around justify-content-sm-between align-items-center col-12 col-md-10 col-lg-8 col-xl-6">
+                    <span class="mt-1 position-absolute bg-danger start-0 d-none d-sm-block w-50" style="height: 1px; z-index: -1;"></span>
+                    <span class="mt-1 position-absolute bg-danger start-50 d-none d-sm-block w-50" style="height: 1px; z-index: -1;"></span>
+                    <a class="d-flex align-items-center justify-content-center flex-wrap text-danger bg-white py-2 px-2 px-sm-3
+                    " href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                            class="bi bi-cart2 me-2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                        </svg>
+                        <span class="d-inline-block">سبد خرید</span>
+                    </a>
+                    <a class="d-flex align-items-center justify-content-center flex-wrap text-danger bg-white py-2 px-2 px-sm-3
+                    " href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                            class="bi bi-truck me-2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                        </svg>
+                        <span class="d-inline-block">زمان و نحوه ارسال</span>
+                    </a>
+                    <a class="d-flex align-items-center justify-content-center flex-wrap text-danger fs-5 bg-white py-2 px-2 px-sm-3
+                    " href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-wallet2 me-2" viewBox="0 0 16 16">
+                            <path
+                                d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
+                        </svg>
+                        <span class="d-inline-block">پرداخت</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Content -->
+    <div class="py-2 py-sm-3">
+        <section class="container">
+            <!-- Content -->
+            <div class="row g-3">
+                <!-- Content -->
+                <div class="col-sm-12 col-md-8 col-lg-9 position-relative">
+                    <!-- Send -->
+                    <div class="mb-3 shadow-sm p-3 custom-border-light rounded-2">
+                        <span class="d-block pb-3">روش پرداخت</span>
+                        <div class="d-flex gap-3 flex-wrap bg-light p-2 p-sm-3 rounded-2">
+                            <div class="d-flex align-items-center gap-2 form-check form-check-inline text-muted small mb-0">
+                                <input class="form-check-input" type="radio" name="sendWay" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">پرداخت اینترنتی</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 form-check form-check-inline text-muted small mb-0">
+                                <input class="form-check-input" type="radio" name="sendWay" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">پرداخت در محل</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- kopon -->
+                    <div class="p-3 mt-3 custom-border-light shadow-sm rounded-2 d-flex flex-wrap gap-2 align-items-center">
+                        <span class="">کد تخفیف</span>
+                        <a type="button" class="ms-auto text-danger small" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-plus" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                            </svg>
+                            افزودن کد تخفیف
+                        </a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content p-3">
+                                    <h6 class="small-h6 text-muted mb-3"> کد تخفیف</h6>
+                                    <form action="" class="position-relative small text-muted fw-lighter   ">
+                                        <div class="form-floating">
+                                            <input type="text"
+                                                class="form-control form-focus-input"
+                                                id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput text-muted">کد تخفیف را وارد کنید</label>
+                                        </div>
+                                        <a href=""
+                                            class="btn position-absolute text-gray btn-hover-text-danger end-0 top-0 h-100 d-flex align-items-center">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-check-circle-fill"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                            </svg>
+                                        </a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- How - When Send -->
+                    <div class="custom-border-light rounded-2 shadow-sm mt-3 d-flex flex-column p-3">
+                        <span class="mb-3">خلاصه سفارش</span>
+                        <div class="mb-3">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                                    class="bi bi-truck m-2 text-" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                                </svg>
+                                <span class="small text-muted">ارسال عادی</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo m-2 text-" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                                </svg>
+                                <span class="small text-muted">اصفهان - سپاهان شهر - خیابان مشتاق - ساختمان شقایق - واحد 46</span>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-clock-history m-2 text-" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z" />
+                                    <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z" />
+                                    <path
+                                        d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z" />
+                                </svg>
+                                <span class="small text-muted">دوشنبه 13 تیر</span>
+                            </div>
+                        </div>
+                        <!-- Products -->
+                        <span class="mb-3">محصولات</span>
+                        <div class="grid-box rounded-2">
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                            <div class="position-relative custom-border-light rounded-2" >
+                                <img src="assets/img/p1.svg" class="img-fluid rounded-2" alt="">
+                                <span class="rounded-circle small text-muted custom-border-light badge p-1 bg-white position-absolute top-0 start-50 translate-middle fw-normal d-flex align-items-center justify-content-center"
+                                > ۲۱ </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SideBar -->
+                <div class="col-md-4 col-lg-3">
+                    <div class="sticky-top z-1 shadow-sm custom-border-light rounded-2" style="top: 16px;">
+                        <div class="card-body p-3 p-md-2 p-xl-3">
+                            <div class="d-flex flex-wrap gap-2 p-1">
+                                <span class="small">خلاصه سفارش</span>
+                                <span class="ms-auto small">۶ کالا</span>
+                            </div>
+                            <div class="bg-light rounded-2 px-3 py-1 mt-2">
+                                <div class="d-flex flex-wrap gap-2 align-items-center py-2">
+                                    <h6 class="small fw-lighter m-0">مبلغ کالاها</h6>
+                                    <span class="ms-auto small fw-lighter">۵۶۸.۰۰۰ <span
+                                            class="cart-font-size">تومان</span></span>
+                                </div>
+
+                                <div class="d-flex flex-wrap gap-2 align-items-center py-2">
+                                    <h6 class="small fw-lighter m-0 text-danger">سود شما از خرید</h6>
+                                    <span class="ms-auto small fw-lighter text-danger">۶۸.۰۰۰ <span
+                                            class="cart-font-size">تومان</span></span>
+                                </div>
+                                <div class="d-flex flex-wrap gap-2 align-items-center py-2">
+                                    <h6 class="small fw-lighter m-0">جمع سبد خرید</h6>
+                                    <span class="ms-auto small fw-lighter">۵۰۰.۰۰۰ <span
+                                            class="cart-font-size">تومان</span></span>
+                                </div>
+                            </div>
+                            <div class="rounded-2 px-3 py-1 mt-1">
+                                <div class="d-flex flex-wrap gap-2 align-items-center py-2">
+                                    <h6 class="small fw-lighter m-0">هزینه ی ارسال</h6>
+                                    <span class="ms-auto small fw-lighter">رایگان <span
+                                        class="cart-font-size"></span></span>
+                                </div>
+                            </div>
+                            <div class="bg-light rounded-2 px-3 py-1 mt-1">
+                                <div class="d-flex flex-wrap gap-2 align-items-center py-2">
+                                    <h6 class="small fw-lighter m-0">مبلغ قابل پرداخت</h6>
+                                    <span class="ms-auto small fw-lighter">۵۰۰.۰۰۰ <span
+                                            class="cart-font-size">تومان</span></span>
+                                </div>
+                            </div>
+                            <a href="" class="btn border-danger small rounded-1 text-danger btn-hover-danger d-block mt-3">پرداخت</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="assets/js/swiper.js"></script>
+
+    <!-- My Script -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
